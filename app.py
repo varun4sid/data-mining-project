@@ -3,10 +3,10 @@ import sqlite3
 import pandas as pd
 import pickle
 import plotly.graph_objects as go
-from inference_math import calculate_time_left, calculate_deterministic_score, calculate_pcw, calculate_final_score
+from src.inference_math import calculate_time_left, calculate_deterministic_score, calculate_pcw, calculate_final_score
 
-DB_PATH = '../db/nba_data.db'
-MODEL_PATH = 'hoeffding_model.pkl'
+DB_PATH = 'db/nba_data.db'
+MODEL_PATH = 'src/hoeffding_model.pkl'
 
 @st.cache_resource
 def load_model():
