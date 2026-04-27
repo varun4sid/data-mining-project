@@ -78,5 +78,5 @@ python src/train_model.py
 ### 5. Run the Streamlit Dashboard
 Launch the interactive UI to predict live probabilities.
 ```bash
-streamlit run src/app.py
+streamlit run app.py
 ```
